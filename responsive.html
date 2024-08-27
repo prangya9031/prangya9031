@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive</title>
+    <style>
+        .parent {
+            height: 600px;
+            width: 600px;
+            background-color: rgb(77, 126, 126);
+            display: flex;
+            allign-items:center;
+            justify-content: center;
+        }
+        .one {
+            height: 100px;
+            width: 100px;
+            background-color: cornflowerblue;
+        }
+        .two {
+            height: 100px;
+            width: 100px;
+            background-color: coral;
+        }
+        .three {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(89, 79, 89);
+        }
+        @media (max-width: 600px)  {
+            .parent {
+                background-color: red;
+                justify-content: space-around;
+            }
+        }
+        @media (max-width: 300px)  {
+            .parent {
+                background-color: blue;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+</body>
+</html>
